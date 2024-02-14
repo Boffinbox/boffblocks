@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" X ",
+		"XXX",
+		" X "
+	],
+	"key": {
+		"X": {
+			"item": "boffblocks:first_item"
+		}
+	},
+	"result": {
+		"item": "boffblocks:first_block"
+	}
+}
