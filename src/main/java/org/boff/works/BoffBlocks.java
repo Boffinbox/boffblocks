@@ -2,6 +2,7 @@ package org.boff.works;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.boff.works.recipes.ModRecipes;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -32,6 +33,7 @@ public class BoffBlocks
 	public void init(FMLInitializationEvent event)
 	{
 		LOGGER.info(BoffBlocks.NAME + " says hi!");
+		ModRecipes.initSmelting();
 	}
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event)
