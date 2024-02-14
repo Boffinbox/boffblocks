@@ -20,7 +20,7 @@ public class RegistrationHandler
 	{
 		final Item[] items =
 		{
-				RegistryUtil.setItemName(new Item(), "first_item").setCreativeTab(CreativeTabs.MISC),
+				RegistryUtil.setItemName(new Item(), "first_item").setCreativeTab(BoffBlocks.BOFFBLOCKS_TAB),
 				
 		};
 		
@@ -37,7 +37,7 @@ public class RegistrationHandler
 	{
 		final Block[] blocks =
 		{
-				RegistryUtil.setBlockName(new Block(Material.ROCK), "first_block").setCreativeTab(CreativeTabs.MISC),
+				RegistryUtil.setBlockName(new Block(Material.ROCK), "first_block").setCreativeTab(BoffBlocks.BOFFBLOCKS_TAB),
 				
 		};
 		

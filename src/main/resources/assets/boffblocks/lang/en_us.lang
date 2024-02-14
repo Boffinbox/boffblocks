@@ -4,3 +4,7 @@ item.boffblocks.first_item.name=First Item
 
 # Blocks
 tile.boffblocks.first_block.name=First Block
+
+
+# Creative Tabs
+itemGroup.boffblocks=BoffBlocks
