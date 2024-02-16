@@ -34,9 +34,13 @@ public class RegistrationHandler
 	@SubscribeEvent
 	public static void registerBlocks(Register<Block> event)
 	{
+		Block myBlock = new Block(Material.ROCK);
+		myBlock.setHardness(1.5f);
+		myBlock.setHarvestLevel("pickaxe", 1);
+		
 		final Block[] blocks =
 		{
-				RegistryUtil.setBlockName(new Block(Material.ROCK), "first_block").setCreativeTab(BoffBlocks.BOFFBLOCKS_TAB),
+				RegistryUtil.setBlockName(myBlock, "first_block").setCreativeTab(BoffBlocks.BOFFBLOCKS_TAB),
 				
 		};
 		
