@@ -34,9 +34,9 @@ public class RegistrationHandler
 	@SubscribeEvent
 	public static void registerBlocks(Register<Block> event)
 	{
-		Block myBlock = new Block(Material.ROCK);
-		myBlock.setHardness(1.5f);
-		myBlock.setHarvestLevel("pickaxe", 1);
+		Block myBlock = new Block(Material.WOOD);
+		myBlock.setHardness(0.1f);
+		myBlock.setHarvestLevel("axe", 2);
 		
 		final Block[] blocks =
 		{
