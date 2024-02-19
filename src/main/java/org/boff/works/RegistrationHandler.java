@@ -5,7 +5,6 @@ import org.boff.works.util.RegistryUtil;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -20,7 +19,7 @@ public class RegistrationHandler
 	{
 		final Item[] items =
 		{
-				RegistryUtil.setItemName(new Item(), "first_item").setCreativeTab(CreativeTabs.MISC),
+				RegistryUtil.setItemName(new Item(), "first_item").setCreativeTab(BoffBlocks.BOFFBLOCKS_TAB),
 				
 		};
 		
@@ -35,9 +34,13 @@ public class RegistrationHandler
 	@SubscribeEvent
 	public static void registerBlocks(Register<Block> event)
 	{
+		Block myBlock = new Block(Material.WOOD);
+		myBlock.setHardness(0.1f);
+		myBlock.setHarvestLevel("axe", 2);
+		
 		final Block[] blocks =
 		{
-				RegistryUtil.setBlockName(new Block(Material.ROCK), "first_block").setCreativeTab(CreativeTabs.MISC),
+				RegistryUtil.setBlockName(myBlock, "first_block").setCreativeTab(BoffBlocks.BOFFBLOCKS_TAB),
 				
 		};
 		
